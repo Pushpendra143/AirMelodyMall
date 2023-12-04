@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirMelodyMall.com</title>
+    <link rel="stylesheet" href="5.css">
+</head>
+<script>
+     
+    document.addEventListener("DOMContentLoaded", function () {
+         
+        const searchInput = document.querySelector('.search');
+        searchInput.addEventListener('focus', function () {
+            this.style.backgroundColor = '#f0f0f0';
+        });
+        searchInput.addEventListener('blur', function () {
+            this.style.backgroundColor = '';  
+        });
+
+        const addToCartButtons = document.querySelectorAll('.Add');
+        addToCartButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                alert('Item added to cart!');
+                 
+            });
+        });
+    });
+</script> 
+
+<body>
+
+    <nav>
+        <div class="header">
+            <div class="Name">AirMelodyMall
+                <img src="2.png">
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search" placeholder="Serach">
+                <button class="icon"><img src="pngtree-vector-search-icon-png-image_925708 Background Removed.png" class="temp"></button>
+            </div>
+            <div class="Details">
+                <a href="index.html">
+                    <h2 class="head">Home</h2>
+                </a>
+                <a href="empty cart.html">
+                    <h2 class="head">Cart</h2>
+                </a>
+                <a href="5_Register.html">
+                    <h2 class="head">Register</h2>
+                </a>
+                <a href="5_login.html">
+                    <h2 class="head">Login</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="products">
+    <div class="product">
+        <div class="item"><img
+                src="https://www.jiomart.com/images/product/original/rvdilpbzf9/f3-airbuds-pro-bluetooth-wireless-earphones-with-touchstone-charging-case-tws-earbuds-earphones-product-images-orvdilpbzf9-p598864396-0-202302270430.jpg">
+            <div class="option">
+                <button class="Add">Add to Cart</button>
+                <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+            </div>
+            <h2>1999 $</h2>
+        </div>
+        <div class="item"><img
+                src="https://datamation.in/wp-content/uploads/2021/09/JBL-C115-TWS-by-Harman-datamation1-2.jpg">
+                <div class="option">
+                    <button class="Add">Add to Cart</button>
+                    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+                </div>
+            <h2>2999 $</h2>
+        </div>
+        <div class="item"> <img
+                src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v167405389/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/246499_0_cnkjlq.png/mxw_640,f_auto">
+                <div class="option">
+                    <button class="Add">Add to Cart</button>
+                    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+                </div>
+            <h2>5000 $</h2>
+        </div>
+        <div class="item"><img
+                src="https://media.croma.com/image/upload/v1664476833/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/246110_hlnnxk.png">
+                <div class="option">
+                    <button class="Add">Add to Cart</button>
+                    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+                </div>
+            <h2>2499 $</h2>
+        </div>
+        <div class="item"><img src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_cf4cf5e7-e1b7-4ec0-b4b8-6a747133e810_600x.png?v=1695621264">
+            <div class="option">
+                <button class="Add">Add to Cart</button>
+                <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+            </div>
+            <h2>1499 $</h2>
+        </div>
+        <div class="item"><img
+                src="https://www.mobiparts.ro/img/t/800x800/products/4125/qcy-t17-wireless-earphones-7-1653485730.jpg">
+                <div class="option">
+                    <button class="Add">Add to Cart</button>
+                    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+                </div>
+            <h2>2999 $</h2>
+        </div>
+        <div class="item"><img
+                src="https://media.croma.com/image/upload/v1674054701/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/247476_0_wh5f2d.png">
+                <div class="option">
+                    <button class="Add">Add to Cart</button>
+                    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+                </div>
+            <h2>8000 $</h2>
+        </div>
+        <div class="item"><img
+                src="https://in.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw67580509/JBL_TUNE%20115TWS_Product%20Image_Hero_White.png">
+                <div class="option">
+                    <button class="Add">Add to Cart</button>
+                    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+                </div>
+            <h2>2999 $</h2>
+        </div>
+        <div class="item"><img src="https://image.coolblue.nl/422x390/products/1765596">
+            <div class="option">
+                <button class="Add">Add to Cart</button>
+                <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+            </div>
+            <h2>2799 $</h2>
+        </div>
+        <div class="item"><img
+                src="https://www.bhphotovideo.com/images/images750x750/philips_tat4556wt_00_tws_anc_wireless_in_ear_1750011.jpg">
+                <div class="option">
+                    <button class="Add">Add to Cart</button>
+                    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+                </div>
+            <h2>2999 $</h2>
+        </div>
+        <div class="item"><img src="https://m.media-amazon.com/images/I/61rPqsDQ-ZL._SL1500_.jpg">
+            <div class="option">
+                <button class="Add">Add to Cart</button>
+                <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+            </div>
+            <h2>21999 $</h2>
+        </div>
+        <div class="item"><img src="https://m.media-amazon.com/images/I/516+h7HKsyL._SL1002_.jpg">
+            <div class="option">
+                <button class="Add">Add to Cart</button>
+                <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+            </div>
+            <h2>19999 $</h2>
+        </div>
+        <div class="item"><img
+            src="https://www.wingslifestyle.in/wp-content/uploads/2023/09/Wings-Phantom-450-Thumbnails1_ID-655x655.jpg">
+        <div class="option">
+            <button class="Add">Add to Cart</button>
+            <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+        </div>
+        <h2>1999 $</h2>
+    </div><div class="item"><img
+        src="https://media.wired.com/photos/63e69de969cf98bf35404277/1:1/w_1278,h_1278,c_limit/Best-Wireless-Headphones-Featured-Focal-Bathys-Gear.jpg">
+    <div class="option">
+        <button class="Add">Add to Cart</button>
+        <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+    </div>
+    <h2>1999 $</h2>
+</div><div class="item"><img
+    src="https://m.media-amazon.com/images/I/411vkxyfS5L._SX300_SY300_QL70_FMwebp_.jpg">
+<div class="option">
+    <button class="Add">Add to Cart</button>
+    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+</div>
+<h2>1999 $</h2>
+</div><div class="item"><img
+    src="https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/z/l/l/-original-imagty9c5pmq8tdt.jpeg?q=70">
+<div class="option">
+    <button class="Add">Add to Cart</button>
+    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+</div>
+<h2>1999 $</h2>
+</div><div class="item"><img
+    src="https://www.gonoise.com/cdn/shop/files/1.1_4_5f887fcc-8e00-4f46-890a-17a40d66eda9.png?v=1698042678">
+<div class="option">
+    <button class="Add">Add to Cart</button>
+    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+</div>
+<h2>1999 $</h2>
+</div><div class="item"><img
+    src="https://www.gonoise.com/cdn/shop/files/1_64170ada-4cbc-46e1-83fd-454464d3a2d0.png?v=1690349629">
+<div class="option">
+    <button class="Add">Add to Cart</button>
+    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+</div>
+<h2>1999 $</h2>
+</div><div class="item"><img
+    src="https://8mm.in/cdn/shop/files/Untitleddesign_24_5109262b-e4ce-417b-a17e-9a405a17eb2d_1080x1080.png?v=1688735400">
+<div class="option">
+    <button class="Add">Add to Cart</button>
+    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+</div>
+<h2>1999 $</h2>
+</div><div class="item"><img
+    src="https://headsetsindia.com/wp-content/uploads/2023/01/Jabra-Evolve2-Buds-Angle-18-MS-USBA-LB-1536x1536.png">
+<div class="option">
+    <button class="Add">Add to Cart</button>
+    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+</div>
+<h2>1999 $</h2>
+</div><div class="item"><img
+    src="https://images.squarespace-cdn.com/content/v1/621663e7e8f5476ba5df4287/1645636335276-U8TBP3W41I005E75H04G/Audeze-LCD-5-Headphone">
+<div class="option">
+    <button class="Add">Add to Cart</button>
+    <button style="border-color: rgb(140, 197, 246)" class="Buy"><a href="payment.html">Buy now</a></button>
+</div>
+<h2>1999 $</h2>
+</div>
+    </div>
+    <footer>
+        <div class="bottom_top">Back to top</div>
+        <div class="footer">
+            <div>
+                <h3>Connect with us</h3>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>whatsapp</li>
+            </div>
+            <div>
+                <h3>Countries</h3>
+                    <li>India</li>
+                    <li>USA</li>
+                    <li>Bhutan</li>
+                    <li>UK</li>
+            </div>
+            <div>
+                <h3>Shop on other platform</h3>
+                    <li>Flipkart</li>
+                    <li>Amazon</li>
+                    <li>E-bay</li>
+                    <li>Iot-Webplanet</li>
+            </div>
+            <div>
+                <h3>Get to know us</h3>
+                    <li>About Us</li>
+                    <li>Carrers</li>
+                    <li>Account</li>
+            </div>
+        </div>
+        <div class="tr">This website is subjected to privacy policy under section 69
+            <p>Please read Terms and Condition</p>
+        </div>
+    </footer>
+</body>
+
+</html>

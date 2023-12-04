@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            background-color: #f4f4f4;
+            font-family: "Poppins" , Helvetica, sans-serif;
+        }
+        form{
+            width: 30%;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #bbbbbb;
+            background-color: white;
+            border-radius: 10px;
+            min-width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1{
+            text-align: center;
+            color: #5e9ca0;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+        label{
+            display: block;
+            margin: 10px 0;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #bbbbbb;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            background-color: #2e6c80;
+            color: white;
+            border: none;
+            cursor: pointer;
+            height: 40px;
+            font-size: large;
+        }
+        input[type="submit"]:hover{
+            background-color: #2e6c80;
+            opacity: 0.8;
+
+        }
+        .age {
+            display: flex;
+            gap: 10px;
+        }
+        textarea {
+            height: 70px;
+            width: 29vw;
+            min-width: 300px;
+            max-width: 580px;
+            font-size: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register</h1>
+    <form onsubmit="return check_pass()">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="abcdxyz">
+        <label>e-mail</label>
+        <input type="email" id="e-mail" required placeholder="abc099@gmail.com">
+        <label>Password</label>
+        <input type="password" id="password" required name="password" placeholder="Password">
+        <label>Confirm Password</label>
+        <input type="password" required id="c_password" name="c_password" placeholder="Confirm Password">
+        <div class="age">
+            <label>Age:</label>
+            <label id="Output">18</label>
+        </div>  
+        <input type="range" min="18" max="100" value="18" id="age">
+        <label>Address</label>
+        <textarea placeholder="Write here..."></textarea>  
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        var slider = document.getElementById("age");
+        var output = document.getElementById("Output");
+        output.innerHTML = slider.value;
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        } 
+        function check_pass() {
+            let pass = document.getElementById('password').value
+            let a = /.*[A-Z]+.*/
+            let b = /.*[a-z]+.*/
+            let c = /.*[0-9]+.*/
+            let d = /.*[!@#$%^&*()?":><{}]+.*/
+            if (!pass.match(a) || !pass.match(b) || !pass.match(c) || !pass.match(d)) {
+                alert("Invalid password format")
+                return false
+            } else {
+                return true
+            }
+
+            let check_password = document.getElementById("c_password").value
+            if (check_password != pass) {
+                alert("password and confirm password doesn't match")
+                return false
+            } else {
+                return true
+            }
+        }
+    </script>
+</body>
+</html>

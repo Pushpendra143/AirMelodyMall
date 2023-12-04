@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Payment Options</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;  
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .payment-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .payment-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-option img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .payment-option:hover {
+            background-color: #f9f9f9;
+        }
+
+        button {
+            background-color: #3498db; /* Blue */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Darker Blue */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Select Payment Method</h1>
+
+        <div class="payment-options">
+            <div class="payment-option" onclick="processPayment('creditCard')">
+                <img src="https://cdn-icons-png.flaticon.com/512/6963/6963703.png" alt="Credit Card">
+                <span>Credit Card</span>
+            </div>
+
+            <div class="payment-option" onclick="processPayment('paypal')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal">
+                <span>PayPal</span>
+            </div>
+
+            <div class="payment-option" onclick="processPayment('onlineWallets')">
+                <img src="https://cdn3.iconfinder.com/data/icons/shopping-icons-14/128/05_Wallet-512.png" alt="Online Wallets">
+                <span>Online Wallets</span>
+            </div>
+
+            <div class="payment-option" onclick="processPayment('bankTransfer')">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-bank-transfer-1817143-1538011.png" alt="Bank Transfer">
+                <span>Bank Transfer</span>
+            </div>
+
+            <div class="payment-option" onclick="processPayment('cod')">
+                <img src="https://cdn-icons-png.flaticon.com/512/1554/1554401.png" alt="Cash on Delivery">
+                <span>Cash on Delivery</span>
+            </div>
+
+            <div class="payment-option" onclick="processPayment('cryptocurrency')">
+                <img src="https://cdn-icons-png.flaticon.com/512/7047/7047060.png" alt="Cryptocurrency">
+                <span>Cryptocurrency</span>
+            </div>
+
+            <div class="payment-option" onclick="processPayment('bnpl')">
+                <img src="https://cdn-icons-png.flaticon.com/512/9359/9359418.png" alt="Buy Now, Pay Later">
+                <span>Buy Now, Pay Later</span>
+            </div>
+        </div>
+
+        <button onclick="processPayment()">Process Payment</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function processPayment(paymentMethod) {
+            alert(`Payment processed successfully via ${paymentMethod}!`);
+             
+        }
+    </script>
+
+</body>
+</html>
